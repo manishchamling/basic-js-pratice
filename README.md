@@ -4,3 +4,4 @@
 -Add
 -commit
 -push
+fetch
