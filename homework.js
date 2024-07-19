@@ -11,3 +11,7 @@ const sum = num1 + num2 + num3;
 
 //string literal
 alert(`The sum of two number is ${sum}`);
+
+// write a js program to check the day of the week
+
+// write a js progaram to check the grade of the student
