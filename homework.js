@@ -48,7 +48,7 @@ const score = Number(prompt("Enter Your score"));
 switch (true) {
   case score >= 90 && score <= 100:
     alert(" Your Grade is A+");
-    alert("Excelent");
+    alert("Excellent");
     break;
   case score >= 80 && score <= 90:
     alert(" Your Grade is A");
@@ -80,4 +80,11 @@ switch (true) {
     break;
   default:
     alert("You have to put a score from 1 to 100 ");
+}
+// write a program to know the gender of the person
+const gender = prompt("Write M for male and F for female");
+if (gender === m) {
+  alert("Male");
+} else {
+  alert("Female");
 }
