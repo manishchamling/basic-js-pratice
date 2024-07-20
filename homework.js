@@ -1,17 +1,37 @@
-// Write a js program to create sum calculator using user interection
-// alert
-alert("Calculator for Sum");
+// // Write a js program to create sum calculator using user interection
+// // alert
+// alert("Calculator for Sum");
 
-//Using prompt to take a number from the user
-const num1 = parseInt(prompt("Enter the first number:"));
-const num2 = parseInt(prompt("Enter the second number:"));
-const num3 = parseInt(prompt("Enter the third number:"));
-// sum is the variable is used to find the sum of two number
-const sum = num1 + num2 + num3;
+// //Using prompt to take a number from the user
+// const num1 = parseInt(prompt("Enter the first number:"));
+// const num2 = parseInt(prompt("Enter the second number:"));
+// const num3 = parseInt(prompt("Enter the third number:"));
+// // sum is the variable is used to find the sum of two number
+// const sum = num1 + num2 + num3;
 
-//string literal
-alert(`The sum of two number is ${sum}`);
+// //string literal
+// alert(`The sum of two number is ${sum}`);
 
 // write a js program to check the day of the week
 
 // write a js progaram to check the grade of the student
+alert("Welcome to grade finder");
+
+const score = Number(prompt("Enter Your score"));
+switch (true) {
+  case score >= 80:
+    alert("Your Grade is A");
+
+  case score >= 60 && score <= 80:
+    alert("Your Grade is B");
+
+  case score <= 60:
+    alert("Your are Fail ");
+  default:
+    alert(
+      " you have to put a number or score otherwise you can't find your grade"
+    );
+}
+
+// const a = "helloworld";
+// console.log(a);
