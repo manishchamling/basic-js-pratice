@@ -117,3 +117,13 @@ const subtraction = numb1 - numb2;
 
 console.log(subtraction);
 alert(`${subtraction}`);
+
+// write a program to find the division of a number
+const number1 = prompt("Enter the number");
+const number2 = prompt("Enter another number");
+
+const division = number1 / number2;
+
+console.log(division);
+
+alert(`${division}`);
