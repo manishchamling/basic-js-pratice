@@ -46,4 +46,4 @@
 
 // ES6 syntax
 // condition ? true: false;
-// gender === "m" ? console.log("m"): console.log("f");
+// gender === "m" ? console.log("m") : console.log("f");
