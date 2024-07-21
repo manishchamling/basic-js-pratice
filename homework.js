@@ -105,6 +105,15 @@ alert("Thank you for using sum calculator");
 // write a JS program to multiply two number
 const nm1 = Number(prompt("Enter your first  number"));
 const nm2 = Number(prompt("Enter your second number"));
-const multiply = nm11 * nm2;
+const multiply = nm1 * nm2;
 console.log(multiply);
 alert(`${multiply}`);
+
+// write a program to find the subtraction of the two number
+const numb1 = Number(prompt("Enter the 1st Number"));
+const numb2 = Number(prompt("Enter the 2nd Number"));
+
+const subtraction = numb1 - numb2;
+
+console.log(subtraction);
+alert(`${subtraction}`);
