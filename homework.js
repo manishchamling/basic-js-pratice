@@ -101,3 +101,10 @@ console.log(sum);
 alert(`The sum of two number is ${sum}`);
 
 alert("Thank you for using sum calculator");
+
+// write a JS program to multiply two number
+const nm1 = Number(prompt("Enter your first  number"));
+const nm2 = Number(prompt("Enter your second number"));
+const multiply = nm11 * nm2;
+console.log(multiply);
+alert(`${multiply}`);
