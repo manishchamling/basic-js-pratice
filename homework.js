@@ -83,8 +83,21 @@ switch (true) {
 }
 // write a program to know the gender of the person
 const gender = prompt("Write M for male and F for female");
-if (gender === m) {
+const m = "m";
+if (gender == m) {
   alert("Male");
 } else {
   alert("Female");
 }
+
+// write a js program to find the sum of two number. if the two value are the same then return triple value.
+alert("Welcome to sum calculator");
+
+const num1 = Number(prompt("Enter the first number"));
+const num2 = Number(prompt("Enter the second number"));
+
+const sum = num1 + num2;
+console.log(sum);
+alert(`The sum of two number is ${sum}`);
+
+alert("Thank you for using sum calculator");
