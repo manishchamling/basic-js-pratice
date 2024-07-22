@@ -60,3 +60,12 @@ const number = Number(prompt("|Enter Number for sum"));
 const number1 = Number(prompt("Enter another number for sum"));
 const ans = sum(number1, number);
 console.log({ ans });
+
+// ES6
+const sum1 = (c, d) => {
+  return (e = c + d);
+};
+const num = Number(prompt("Enter the first Number"));
+const num1 = Number(prompt("Enter the second number"));
+const result = sum1(num, num1);
+console.log(result);
