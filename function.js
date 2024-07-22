@@ -35,19 +35,28 @@
 // const newans = square(6);
 // console.log({ newans });
 
-// finding square through ES5 function
-function square(a) {
-  const b = a * a;
-  return b;
-}
-const num = 4;
-const result = square(num);
-console.log({ result });
+// // finding square through ES5 function
+// function square(a) {
+//   const b = a * a;
+//   return b;
+// }
+// const num = 4;
+// const result = square(num);
+// console.log({ result });
 
-// ES6
-const square1 = (a) => {
-  return a * a;
-};
-const num1 = Number(prompt("Enter the number"));
-const result1 = square(num1);
-console.log(result1);
+// // ES6
+// const square1 = (a) => {
+//   return a * a;
+// };
+// const num1 = Number(prompt("Enter the number"));
+// const result1 = square(num1);
+// console.log(result1);
+
+// ES5 for sum
+function sum(a, b) {
+  return (c = a + b);
+}
+const number = Number(prompt("|Enter Number for sum"));
+const number1 = Number(prompt("Enter another number for sum"));
+const ans = sum(number1, number);
+console.log({ ans });
