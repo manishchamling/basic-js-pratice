@@ -147,8 +147,12 @@ const celsiusToFahrenheit = (celsius) => {
 };
 
 // example
-var celsiusTemp = 43;
-var fahrenheitTemp = 53;
+var celsiusTemp = Number(
+  prompt("Enter the celsius Temperature to convert Fahrenheit")
+);
+var fahrenheitTemp = Number(
+  prompt("Enter the fahrenheit temperature to convert Celsirs")
+);
 
 // print
 console.log(
