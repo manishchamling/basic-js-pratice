@@ -109,7 +109,7 @@ const sentence = "What is your name?";
 // Srting Method and Datatype
 const name = "Manish Rai"; // declaring the variable with String datatype
 const repocount = 34; // declaring the variable with Number datatype
-console.log(`My name is ${name} and my repocount is ${repocount}`); // printing the data or value of name and repocount using string literal.
+// console.log(`My name is ${name} and my repocount is ${repocount}`); // printing the data or value of name and repocount using string literal.
 const gameName = "call of duty"; // declaring the variable name gameName. which variable have string datatype
 // console.log(gameName[2]); // Accessing the value of gameName
 // console.log(gameName.toUpperCase()); // Convert into Upper case
@@ -135,4 +135,18 @@ const score = 20;
 const newscore = new Number(30);
 // console.log(newscore);
 // console.log(newscore.toString().length); // to string is the Number method used to conver the Number into string.
-console.log(newscore.toFixed(2)); //toFixed Number method add 0. when we pass 2 in parameters this method add two zero (.00 like this ).
+// console.log(newscore.toFixed(2)); //toFixed Number method add 0. when we pass 2 in parameters this method add two zero (.00 like this ).
+
+////Write a js function to that convert full name into proper case
+// e.g manish chamling rai => Manish Chamling Rai
+const properCase = (text) => {
+  return text //returning the text value
+    .split(" ")  //.split method is using to split the word with the " "(space) When the user put the space in the name that split like (manish chamling rai) here is the two space the split method split this word into three words/
+    .map(  // using map method for loop
+      (word) =>  // 
+        word.slice(0, 1).toUpperCase() + //here we use splice method to divide the word. In the method slice we put the parameter (0, 1) because to differ first letter form other letter and when the first letter differ from other. we put Uppercase string method to convert the word into uppercase or capital letter.
+                word.slice(1, word.length).toLowerCase() //slice is the string method. in this  line we use slice method to slice the word from 1st letter to word.length. and we use another method LowerCase to convert the word into lower case. ([m:0][a:1][n:2][i:3][s:4][h:5]) so we put 0 and 1 parameter to convert first letter into uppercase. we put 1 to word.length parameter to convert other letter except first into LowerCase.
+    )
+    .join(" "); // .join method is used to join the word. when the word split with the split method at last we have to join that word. so we use join method to join the split word. Things to remember when we split and join the String :[in the split method we split with the (" " space) when we split with the space. we have to join with the (" " space).]
+};
+console.log(properCase("maniSh cHamling rai")); //at last we are calling the properCase function and printing the value.
