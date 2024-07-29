@@ -104,3 +104,25 @@ const foodA = ["dal", "Rice", "Butter"];
 const foodB = ["dal", "Chicken", "Butter"];
 const commonfinder = (a, b) => a.filter((item) => b.includes(item));
 console.log(commonfinder(foodA, foodB));
+
+//Write a js function to that convert full name into proper case
+// e.g manish chamling rai => Manish Chamling Rai
+/* 
+1. Create a function 
+2. text convert into 3 different string using split
+3.use loop for each character 
+4.and first character should be uppercase
+5.other character convert into lower case
+6.use join method to join the character
+7.return the result
+ */
+// const propercase = (text) => {
+//   text
+//     .split("-")
+//     .map(
+//       (word) =>
+//         word.slice(0, 1).toUpperCase() +
+//         word.slice(1, word.length).toLowerCase().join("-")
+//     );
+// };
+// console.log(propercase("manish cHamling"));
